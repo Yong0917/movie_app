@@ -30,13 +30,14 @@ class Home extends React.Component{
                     {movies.map(movie => (
                         <Movie
                             key={movie.id}
+                            id={movie.id}
                             year={movie.year}
                             title={movie.title}
                             summary={movie.summary}
                             poster={movie.medium_cover_image}
                             genres={movie.genres}
                         />
-                    ))};
+                    ))}
                 </div>
             )}
         </section>
